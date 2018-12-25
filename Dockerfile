@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     DEBCONF_NONINTERACTIVE_SEEN=true
 
 ARG CUDNN_VER=v7.4.1.5
-ARG CUDA_VER=10.0
+ARG CUDA_VER=v9.2
 ARG CUDNN_URL=http://people.cs.uchicago.edu/~kauffman/nvidia/cudnn/
 RUN apt-get update \
  && apt-get install -y wget \
